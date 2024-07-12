@@ -32,7 +32,14 @@ class FullScreenImagePage extends StatelessWidget {
                 onTap: () {
                   Navigator.pop(context);
                 },
-                child: Icon(Icons.restaurant_menu_outlined,color: Colors.white,size: 30,),
+                child: Container(
+                  padding: EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                    shape: BoxShape.circle
+                  ),
+                    child: Icon(Icons.restaurant_menu_outlined,color: Colors.white,size: 30,),
+                ),
               ),
             ),
             Positioned(

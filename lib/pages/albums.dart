@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:manushtech_assignment/pages/photos.dart';
 import 'package:provider/provider.dart';
-import 'package:manushtech_assignment/models/albums_model.dart'; // Correct import for AlbumsModel
+import 'package:manushtech_assignment/models/albums_model.dart';
 import '../states/albums_provider.dart';
 import '../widgets/search_delegate.dart';
 
@@ -97,7 +97,7 @@ class _AlbumsPageState extends State<AlbumsPage> {
               color: Colors.white,
             ),
           ),
-          backgroundColor: Colors.blue, // Example color for the avatar background
+          backgroundColor: Colors.blue,
         ),
         trailing: Icon(Icons.arrow_forward_ios),
         onTap: () {
