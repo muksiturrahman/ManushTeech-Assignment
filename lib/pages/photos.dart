@@ -93,14 +93,18 @@ class _PhotosPageState extends State<PhotosPage> {
               );
             },
             child: GridTile(
-              child: Image.network(
-                filteredPhotos[index].url,
-                fit: BoxFit.cover,
+              child: FadeInImage.assetNetwork(
+                placeholder: 'assets/images/error.png', // Placeholder image path
+                image: filteredPhotos[index].url,
+                fit: BoxFit.fill,
+                placeholderFit: BoxFit.fitWidth,
               ),
+
             ),
           );
         },
       ),
     );
-}
+  }
+
 }

@@ -19,9 +19,11 @@ class FullScreenImagePage extends StatelessWidget {
           fit: StackFit.expand,
           children: [
             // Display full-screen image
-            Image.network(
-              imageUrl,
-              fit: BoxFit.cover,
+            FadeInImage.assetNetwork(
+              placeholder: 'assets/images/error.png', // Placeholder image path
+              image: imageUrl,
+              fit: BoxFit.fill,
+              placeholderFit: BoxFit.fitWidth,
             ),
             Positioned(
               right: 10,
